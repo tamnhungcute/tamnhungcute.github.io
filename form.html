@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+     <head> 
+        <meta charset="utf-8">
+        <title>form element</title>
+        <style>
+         h2
+         {
+             background-color: aquamarine;
+             color: rgb(95, 55, 86);
+         }
+         table{
+             border: 1px solid red;
+             background-color: rgb(136, 179, 88);
+         }
+         .login{
+             color: violet;
+            background-color: aquamarine;
+         }
+         .cars{
+             color: blueviolet;
+             background-color: bisque;
+         }
+         .subjects{
+             background-color: cadetblue;
+             color: chartreuse ;
+         }
+         option{
+             color: darkred;
+         }
+         hr{
+             color: rebeccapurple;
+             font-size:xx-large;
+         }
+         .lecture{
+             color: aqua;
+             background-color: wheat;
+         }
+        </style>
+    </head>
+    <body>
+        <div>
+          <table>
+              <tr>
+                  <td>
+                      <form action="">
+                          <h2 class="login"> information login</h2>
+                          <label for="username"> Username:</label>
+                          <input type="text" name="username" id="username"  size="50" >
+                        <hr>
+                          <label for="password"> Password:</label>
+                          <input type="password" name="password" id="password" size="50" >
+
+                          <hr>
+                          <h2 class="cars">drop down list</h2>
+                          <label for="cars"> Select a car :</label>
+                          <select name="cars" id="cars" size="5" multiple>
+                              <option value="honda">Honda</option>
+                              <option value="toyota">Toyota</option>
+                              <option value="audi">Audi  </option>
+                              <option value="mercedes" selected> Mercedes</option>
+                              <option value="ferrari">Ferrari</option>
+                          </select>
+                          <hr>
+                          <h2 class="subjects">  subjects list</h2>
+                          <label for="subjects"> select multiple subject:</label>
+                          <select name="subjects" id="subjects" size="5">
+                              <option value="math">Math</option>
+                              <option value="physics">Physics</option>
+                              <option value="english">English  </option>
+                              <option value="history" selected> History</option>
+                              <option value="act">Act</option>
+                          </select>
+                          <hr>
+                          <h2 class="lecture">content of lecture</h2>
+                          <textarea name="lecture" id="lecture" cols="30" rows="10">
+                              empty
+                          </textarea>
+                          <hr>
+                          <fieldset>
+                              <legend>
+                                  information of student:
+                              </legend>
+                              <label for="suname"> Student name:</label>
+                              <input type="text" id="suname" size="30">
+                              <br>
+                              <label for="address">Student address;</label>
+                              <input type="text" id="andress" size="30">
+                              <br>
+                              <label for="tel">Phone number :</label>
+                              <input type="text" id="phone" size="30">
+                          </fieldset>
+                      </form>
+                  </td>
+              </tr>
+          </table>
+        
+        </div>
+    </body>
